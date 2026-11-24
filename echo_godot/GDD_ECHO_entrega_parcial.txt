@@ -1,0 +1,179 @@
+=====================================================================
+ECHO - GAME DESIGN DOCUMENT | ENTREGA PARCIAL ATUALIZADA
+=====================================================================
+Data: 24/11/2026
+Gênero: jogo de ritmo com elementos narrativos
+Plataforma: computador, teclado e mouse nos menus/editor
+Engine: Godot 4, GDScript
+Apresentação: 2D em pixel art; notas viajam da direita para a esquerda
+
+
+1. CONCEITO
+ECHO acompanha um jovem músico que aprende a compreender entidades da
+natureza por meio da música. Em cada encontro ele observa uma frase
+tocada por outro cantor e a repete. O tutorial é conduzido pelo Mentor;
+as quatro estações são representadas por Flora (primavera), Silas
+(outono), Solana (verão) e Bóreas (inverno).
+
+O ciclo principal é: selecionar a fase, ouvir a frase, responder no
+ritmo, receber julgamentos e energia, concluir a música e ver o
+resultado. A resposta pode se sobrepor à frase seguinte.
+
+
+2. CHAMADA E RESPOSTA
+A tela de batalha tem duas pistas horizontais de quatro linhas: a do
+jogador em cima e a do cantor oponente embaixo. As notas cruzam as
+pistas em direção aos receptores. Na vez do oponente, o jogador observa;
+na sua vez, repete as mesmas notas. O atraso da resposta é configurado
+no chart da fase (padrão de 4 tempos). Um aviso central fixo indica
+"OBSERVE" ou "SUA VEZ", e a pista correspondente recebe destaque.
+
+
+3. CONTROLES
+Linhas de cima para baixo:
+  CIMA     = seta para cima     ou D
+  DIREITA  = seta para direita  ou F
+  ESQUERDA = seta para esquerda ou J
+  BAIXO    = seta para baixo    ou K
+
+ESC pausa durante a fase e volta nos menus; R reinicia a fase;
+F11 alterna tela cheia e janela. Setas, Enter e mouse navegam nos
+menus. A tela de visuais usa as setas para escolher, Tab para alternar
+entre personagens e Enter para equipar.
+
+
+4. NOTAS E OBSTÁCULOS
+- Nota simples: apertar na janela de acerto.
+- Nota longa: apertar a cabeça e segurar até o fim da cauda; completar
+  concede bônus, soltar cedo quebra o combo e retira energia.
+- Notas simultâneas: mais de uma linha no mesmo tempo.
+- Fogo (verão): não apertar. O contato tira energia e quebra o combo.
+  A silhueta de chama preserva a seta da direção correspondente.
+- Gelo (inverno): não apertar. O contato congela as linhas vizinhas por
+  2 tempos; notas nessas linhas podem ser perdidas.
+- Folha (outono): sai voando antes do receptor; não exige resposta e
+  apertá-la não pune o jogador.
+- Flor (primavera): evento programado por tempo que encobre duas linhas
+  do jogador, do oponente ou de ambos; é preciso memorizar a frase.
+Fogo, gelo e folha são obstáculos e não entram no cálculo de precisão.
+
+
+5. JULGAMENTO, COMBO E ENERGIA
+As janelas são Perfect até 50 ms, Good até 100 ms e Bad até 150 ms.
+Miss indica nota perdida; Error, aperto sem nota válida. Acertos
+consecutivos aumentam combo e pontuação; falhas o interrompem.
+
+Energia começa em 100 e varia conforme o resultado:
+  Perfect +1,5 | Good +1 | Bad 0 | Miss -6 | Error -3
+  Fogo -10 | nota longa completa +3 | solta cedo -3
+  A cada 10 acertos consecutivos: +3
+Energia zerada encerra a fase em derrota. O gelo pune pelo congelamento,
+sem dano direto à energia. Os valores ficam em ScoreManager.gd.
+
+
+6. ESTRELAS E PROGRESSO
+Ao concluir a fase, a fração de notas comuns acertadas gera até quatro
+estrelas: 50%, 70%, 85% e 95% para uma, duas, três e quatro estrelas.
+Derrota não concede estrelas. O jogo guarda o melhor resultado por fase
+(estrelas, pontos, taxa de acerto e maior combo) e o número de partidas.
+As estrelas aparecem na seleção e no resultado; o total aparece no
+cabeçalho da seleção. Quatro estrelas em uma estação desbloqueiam os
+dois visuais correspondentes, masculino e feminino.
+
+
+7. FASES DA ENTREGA
+Há cinco fases com áudio e chart próprios:
+  TUTORIAL  - Mentor; notas comuns, longas e as quatro mecânicas.
+  PRIMAVERA - Flora; flores que ocultam parte das pistas.
+  OUTONO    - Silas; notas-folha que saem antes do receptor.
+  VERÃO     - Solana; notas de fogo que devem ser evitadas.
+  INVERNO   - Bóreas; notas de gelo que congelam linhas vizinhas.
+
+Cada cantor tem sprites de idle e quatro direções, com três quadros por
+ação. O oponente é exibido aproximadamente 30% maior que o protagonista,
+medindo a área visível do sprite e alinhando os pés à plataforma.
+
+
+8. IDENTIDADE VISUAL E INTERFACE
+O menu principal mostra a logo ECHO em pixel art, um panorama das
+quatro estações e os chefões ao fundo. A seleção de fases usa cinco
+cartões com personagem, dificuldade, estrelas, regra e recorde.
+
+A HUD das cinco fases usa painéis com bordas em degraus, fonte pixel,
+receptores preenchidos por direção, linha de acerto, aviso central de
+turno e retorno de "PERFEITO", "BOM", "ERRO" e combo perto da pista do
+jogador. Pontuação, combo, precisão e energia ficam na faixa superior.
+
+Os cenários se estendem atrás dos personagens e das pistas:
+  Tutorial: sala de ensaio em tons roxos.
+  Primavera: jardim florido e coreto.
+  Outono: anfiteatro num bosque, folhas e luz âmbar.
+  Verão: praia ao pôr do sol.
+  Inverno: lago congelado, montanhas, aurora e neve.
+Partículas e detalhes têm movimento discreto, sem disputar com notas.
+
+
+9. TELAS E FLUXO
+- Menu: JOGAR, PERSONAGENS, EDITOR, CONFIGURAÇÕES e SAIR.
+- Seleção: cinco fases; JOGAR abre a batalha e o fluxo de editor abre
+  o chart escolhido. Fases sem áudio ou notas não podem ser iniciadas.
+- Visuais: abas masculino/feminino, prévia animada, padrão e quatro
+  estações, cadeado/progresso para itens bloqueados e botão EQUIPAR.
+  Seleção e visual equipado são estados distintos.
+- Pausa: continuar, reiniciar ou sair para a seleção. Ao continuar,
+  há contagem de quatro tempos; perder o foco da janela pausa o jogo.
+- Resultado: pontuação, precisão, notas acertadas, maior combo,
+  avaliação, estrelas, recorde e próximo limiar.
+- Configurações: volume de música e efeitos, sincronia em ms e tela
+  cheia. As preferências são salvas localmente.
+
+
+10. EDITOR DE FASES
+O editor usa o áudio real e uma linha do tempo em compassos, tempos e
+subdivisões. Permite reproduzir, pausar, parar, navegar e ampliar;
+ajustar BPM, subdivisão e atraso da resposta; criar, mover e excluir
+frases; colocar/remover notas; arrastar notas longas; editar obstáculos
+da estação e eventos de flor. O tutorial oferece todas as ferramentas.
+
+Frases e trechos podem ser copiados e colados no playhead ou sobre
+outro trecho, incluindo eventos de flor. Há desfazer com histórico
+de 40 passos. SALVAR grava o JSON; TESTAR salva e abre a fase.
+
+
+11. ÁUDIO
+Cada fase toca sua própria música; o BPM vem do chart. menu.wav toca
+nas telas de menu, se repete ao terminar, para na batalha e no editor
+e recomeça quando o jogador retorna de uma fase. Seu volume usa o
+mesmo controle das músicas das fases. Há sons de interface e contagem;
+ganchos opcionais permitem sons de acerto, erro e obstáculos.
+
+
+12. DADOS E ARQUITETURA
+Cada chart é um JSON com BPM, atraso da resposta, frases/notas e
+eventos. A resposta é gerada a partir das notas do oponente.
+Conductor cuida do relógio musical; Judge, das janelas de acerto;
+ScoreManager, de pontuação e energia; SeasonEffects, dos efeitos;
+LevelDB, do cadastro das fases; ChartEditor, da autoria dos charts.
+
+O progresso, o visual equipado e as preferências ficam em arquivos
+locais de user://. Eles não fazem parte dos arquivos de entrega.
+Os sprites e músicas usados no jogo são assets do projeto, separados
+dos arquivos gerados pelo editor Godot.
+
+
+13. STATUS E PRÓXIMOS PASSOS
+Nesta entrega funcionam as cinco músicas e charts, batalha de chamada
+e resposta, obstáculos sazonais, pausa, resultados, estrelas, desbloqueio
+de visuais, editor, HUD e cenários próprios e música de menu.
+
+Ainda não foram implementados diálogos/cenas narrativas entre fases,
+a habilidade especial Echo, suporte a controle, ranking e testes com
+jogadores para balanceamento final. Os sons de julgamento são opcionais
+e dependem de arquivos de áudio com os nomes previstos no código.
+
+
+14. COMO EXECUTAR
+Abrir project.godot no Godot 4.7 e iniciar o projeto. Na primeira
+abertura, aguardar a importação dos áudios e sprites. O arquivo README.md
+resume instalação e controles; TEST.md traz o roteiro de validação.
+=====================================================================

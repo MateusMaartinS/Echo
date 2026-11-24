@@ -1,0 +1,506 @@
+{
+  "audio": "res://audio/music/tutorial.wav",
+  "bpm": 124.0,
+  "events": [
+    {
+      "end_beat": 56.0,
+      "field": "player",
+      "half": "bottom",
+      "start_beat": 51.0,
+      "type": "flower"
+    },
+    {
+      "end_beat": 63.0,
+      "field": "player",
+      "half": "top",
+      "start_beat": 59.0,
+      "type": "flower"
+    },
+    {
+      "end_beat": 103.0,
+      "field": "player",
+      "half": "bottom",
+      "start_beat": 99.0,
+      "type": "flower"
+    }
+  ],
+  "offset": 0.0,
+  "phrases": [
+    {
+      "end_beat": 36.0,
+      "notes": [
+        {
+          "beat": 32.0,
+          "duration": 1.0,
+          "lane": 0.0
+        },
+        {
+          "beat": 33.0,
+          "duration": 1.0,
+          "lane": 2.0
+        },
+        {
+          "beat": 34.0,
+          "duration": 1.0,
+          "lane": 0.0
+        }
+      ],
+      "start_beat": 32.0
+    },
+    {
+      "end_beat": 44.0,
+      "notes": [
+        {
+          "beat": 40.0,
+          "duration": 1.0,
+          "lane": 0.0
+        },
+        {
+          "beat": 40.0,
+          "lane": 1.0,
+          "type": "fire"
+        },
+        {
+          "beat": 41.0,
+          "lane": 1.0,
+          "type": "fire"
+        },
+        {
+          "beat": 41.0,
+          "duration": 1.0,
+          "lane": 3.0
+        },
+        {
+          "beat": 42.0,
+          "duration": 1.0,
+          "lane": 2.0
+        },
+        {
+          "beat": 42.0,
+          "lane": 1.0,
+          "type": "fire"
+        },
+        {
+          "beat": 43.0,
+          "lane": 1.0,
+          "type": "fire"
+        }
+      ],
+      "start_beat": 40.0
+    },
+    {
+      "end_beat": 52.0,
+      "notes": [
+        {
+          "beat": 48.0,
+          "duration": 4.0,
+          "lane": 1.0
+        }
+      ],
+      "start_beat": 48.0
+    },
+    {
+      "end_beat": 60.0,
+      "notes": [
+        {
+          "beat": 56.0,
+          "duration": 4.0,
+          "lane": 3
+        }
+      ],
+      "start_beat": 56.0
+    },
+    {
+      "end_beat": 68.0,
+      "notes": [
+        {
+          "beat": 64.0,
+          "lane": 2
+        },
+        {
+          "beat": 65.0,
+          "lane": 1
+        },
+        {
+          "beat": 66.0,
+          "lane": 2,
+          "type": "leaf"
+        },
+        {
+          "beat": 66.5,
+          "lane": 1,
+          "type": "leaf"
+        }
+      ],
+      "start_beat": 64.0
+    },
+    {
+      "end_beat": 76.0,
+      "notes": [
+        {
+          "beat": 72.0,
+          "duration": 2.0,
+          "lane": 1
+        },
+        {
+          "beat": 72.0,
+          "lane": 0,
+          "type": "ice"
+        },
+        {
+          "beat": 74.0,
+          "duration": 2.0,
+          "lane": 3
+        },
+        {
+          "beat": 74.0,
+          "lane": 2,
+          "type": "ice"
+        }
+      ],
+      "start_beat": 72.0
+    },
+    {
+      "end_beat": 84.0,
+      "notes": [
+        {
+          "beat": 80.0,
+          "duration": 1.0,
+          "lane": 2
+        },
+        {
+          "beat": 80.0,
+          "duration": 1.0,
+          "lane": 3
+        },
+        {
+          "beat": 81.0,
+          "duration": 1.0,
+          "lane": 1
+        },
+        {
+          "beat": 81.0,
+          "duration": 1.0,
+          "lane": 0
+        },
+        {
+          "beat": 82.0,
+          "duration": 1.0,
+          "lane": 1
+        },
+        {
+          "beat": 82.0,
+          "duration": 1.0,
+          "lane": 2
+        }
+      ],
+      "start_beat": 80.0
+    },
+    {
+      "end_beat": 92.0,
+      "notes": [
+        {
+          "beat": 88.0,
+          "lane": 3
+        },
+        {
+          "beat": 88.0,
+          "lane": 0,
+          "type": "leaf"
+        },
+        {
+          "beat": 88.5,
+          "lane": 1
+        },
+        {
+          "beat": 89.0,
+          "duration": 2.0,
+          "lane": 2
+        },
+        {
+          "beat": 89.0,
+          "lane": 0,
+          "type": "leaf"
+        },
+        {
+          "beat": 90.0,
+          "lane": 0,
+          "type": "leaf"
+        },
+        {
+          "beat": 91.0,
+          "lane": 0,
+          "type": "leaf"
+        }
+      ],
+      "start_beat": 88.0
+    },
+    {
+      "end_beat": 100.0,
+      "notes": [
+        {
+          "beat": 96.0,
+          "duration": 1.0,
+          "lane": 0.0
+        },
+        {
+          "beat": 97.0,
+          "duration": 1.0,
+          "lane": 2.0
+        },
+        {
+          "beat": 98.0,
+          "duration": 1.0,
+          "lane": 0.0
+        }
+      ],
+      "start_beat": 96.0
+    },
+    {
+      "end_beat": 108.0,
+      "notes": [
+        {
+          "beat": 104.0,
+          "duration": 1.0,
+          "lane": 0.0
+        },
+        {
+          "beat": 104.0,
+          "lane": 1.0,
+          "type": "fire"
+        },
+        {
+          "beat": 105.0,
+          "lane": 1.0,
+          "type": "fire"
+        },
+        {
+          "beat": 105.0,
+          "duration": 1.0,
+          "lane": 3.0
+        },
+        {
+          "beat": 106.0,
+          "duration": 1.0,
+          "lane": 2.0
+        },
+        {
+          "beat": 106.0,
+          "lane": 1.0,
+          "type": "fire"
+        },
+        {
+          "beat": 107.0,
+          "lane": 1.0,
+          "type": "fire"
+        }
+      ],
+      "start_beat": 104.0
+    },
+    {
+      "end_beat": 116.0,
+      "notes": [
+        {
+          "beat": 112.0,
+          "lane": 1,
+          "type": "ice"
+        },
+        {
+          "beat": 112.0,
+          "lane": 2,
+          "type": "ice"
+        },
+        {
+          "beat": 112.0,
+          "lane": 0
+        },
+        {
+          "beat": 112.5,
+          "lane": 3
+        },
+        {
+          "beat": 113.0,
+          "lane": 1,
+          "type": "ice"
+        },
+        {
+          "beat": 113.0,
+          "lane": 2,
+          "type": "ice"
+        },
+        {
+          "beat": 113.0,
+          "lane": 0
+        },
+        {
+          "beat": 113.5,
+          "lane": 3
+        },
+        {
+          "beat": 114.0,
+          "lane": 1,
+          "type": "ice"
+        },
+        {
+          "beat": 114.0,
+          "lane": 2,
+          "type": "ice"
+        },
+        {
+          "beat": 114.0,
+          "lane": 0
+        },
+        {
+          "beat": 114.5,
+          "lane": 3
+        },
+        {
+          "beat": 115.0,
+          "lane": 1,
+          "type": "ice"
+        },
+        {
+          "beat": 115.0,
+          "lane": 2,
+          "type": "ice"
+        }
+      ],
+      "start_beat": 112.0
+    },
+    {
+      "end_beat": 124.0,
+      "notes": [
+        {
+          "beat": 120.0,
+          "lane": 2
+        },
+        {
+          "beat": 120.5,
+          "lane": 1
+        },
+        {
+          "beat": 121.0,
+          "lane": 3
+        },
+        {
+          "beat": 121.5,
+          "lane": 2
+        },
+        {
+          "beat": 122.0,
+          "lane": 1
+        },
+        {
+          "beat": 122.5,
+          "lane": 0
+        }
+      ],
+      "start_beat": 120.0
+    },
+    {
+      "end_beat": 132.0,
+      "notes": [
+        {
+          "beat": 128.0,
+          "duration": 2.0,
+          "lane": 1
+        },
+        {
+          "beat": 130.0,
+          "lane": 2
+        },
+        {
+          "beat": 130.5,
+          "lane": 3
+        }
+      ],
+      "start_beat": 128.0
+    },
+    {
+      "end_beat": 140.0,
+      "notes": [
+        {
+          "beat": 136.0,
+          "duration": 2.0,
+          "lane": 2
+        },
+        {
+          "beat": 138.0,
+          "lane": 1
+        },
+        {
+          "beat": 138.5,
+          "lane": 0
+        }
+      ],
+      "start_beat": 136.0
+    },
+    {
+      "end_beat": 148.0,
+      "notes": [
+        {
+          "beat": 144.0,
+          "duration": 1.0,
+          "lane": 0.0
+        },
+        {
+          "beat": 145.0,
+          "duration": 1.0,
+          "lane": 2.0
+        },
+        {
+          "beat": 146.0,
+          "duration": 1.0,
+          "lane": 0.0
+        }
+      ],
+      "start_beat": 144.0
+    },
+    {
+      "end_beat": 156.0,
+      "notes": [
+        {
+          "beat": 152.0,
+          "duration": 1.0,
+          "lane": 0.0
+        },
+        {
+          "beat": 153.0,
+          "duration": 1.0,
+          "lane": 3.0
+        },
+        {
+          "beat": 154.0,
+          "duration": 1.0,
+          "lane": 2.0
+        }
+      ],
+      "start_beat": 152.0
+    },
+    {
+      "end_beat": 164.0,
+      "notes": [
+        {
+          "beat": 160.0,
+          "duration": 4.0,
+          "lane": 1.0
+        }
+      ],
+      "start_beat": 160.0
+    },
+    {
+      "end_beat": 172.0,
+      "notes": [
+        {
+          "beat": 168.0,
+          "duration": 4.0,
+          "lane": 3
+        }
+      ],
+      "start_beat": 168.0
+    }
+  ],
+  "response_delay_beats": 4.0,
+  "snap": 0.25,
+  "song_name": "TUTORIAL"
+}

@@ -1,0 +1,2182 @@
+{
+  "autumn": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            301.0,
+            840.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            270.0,
+            840.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            275.0,
+            840.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.25,
+      "texture": "res://assets/characters/player/animations/autumn_male_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            298.0,
+            866.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            289.0,
+            866.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            293.0,
+            866.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.230563002680965,
+      "texture": "res://assets/characters/player/animations/autumn_male_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            298.0,
+            816.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            294.0,
+            816.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            283.0,
+            816.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.254437869822485,
+      "texture": "res://assets/characters/player/animations/autumn_male_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            288.0,
+            824.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            253.0,
+            824.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            287.0,
+            824.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.254437869822485,
+      "texture": "res://assets/characters/player/animations/autumn_male_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            298.0,
+            870.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            289.0,
+            870.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            870.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.239554317548747,
+      "texture": "res://assets/characters/player/animations/autumn_male_up.png"
+    }
+  },
+  "autumn_female": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            291.0,
+            860.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            267.0,
+            860.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            287.0,
+            860.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.224543080939948,
+      "texture": "res://assets/characters/player/animations/autumn_female_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            295.0,
+            868.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            294.0,
+            868.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            296.0,
+            868.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.239554317548747,
+      "texture": "res://assets/characters/player/animations/autumn_female_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            297.0,
+            848.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            261.0,
+            848.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            283.0,
+            848.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.242253521126761,
+      "texture": "res://assets/characters/player/animations/autumn_female_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            284.0,
+            840.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            245.0,
+            840.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            840.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.247838616714697,
+      "texture": "res://assets/characters/player/animations/autumn_female_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            301.0,
+            858.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            299.0,
+            858.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            290.0,
+            858.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.252199413489736,
+      "texture": "res://assets/characters/player/animations/autumn_female_up.png"
+    }
+  },
+  "classic": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            301.0,
+            836.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            274.0,
+            836.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            277.0,
+            836.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.252199413489736,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_10-4.png",
+      "texture": "res://assets/characters/player/animations/male_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            298.0,
+            868.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            288.0,
+            866.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            868.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.229946524064171,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_09-1.png",
+      "texture": "res://assets/characters/player/animations/male_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299.0,
+            818.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            294.0,
+            818.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            283.0,
+            818.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.253687315634218,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_10-3.png",
+      "texture": "res://assets/characters/player/animations/male_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            288.0,
+            824.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            253.0,
+            824.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            284.0,
+            824.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.255192878338279,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_12-6.png",
+      "texture": "res://assets/characters/player/animations/male_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            298.0,
+            866.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            289.0,
+            866.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            866.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.241573033707865,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_11-5.png",
+      "texture": "res://assets/characters/player/animations/male_up.png"
+    }
+  },
+  "classic_female": {
+    "down": {
+      "alpha_cleanup": true,
+      "frames": [
+        {
+          "anchor": [
+            302.0,
+            850.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            283.0,
+            850.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            286.0,
+            850.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.247126436781609,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_12-8.png",
+      "texture": "res://assets/characters/player/animations/female_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299.0,
+            868.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            297.0,
+            868.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            298.0,
+            868.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.239554317548747,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_10-2.png",
+      "texture": "res://assets/characters/player/animations/female_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299.0,
+            844.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            266.0,
+            844.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            285.0,
+            844.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.244318181818182,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_12-7.png",
+      "texture": "res://assets/characters/player/animations/female_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            288.0,
+            838.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            247.0,
+            840.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            288.0,
+            838.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.247838616714697,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_13-10.png",
+      "texture": "res://assets/characters/player/animations/female_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            302.0,
+            852.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            300.0,
+            852.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            291.0,
+            852.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.255192878338279,
+      "source": "Imagem do ChatGPT 10 de nov. de 2026, 12_54_13-9.png",
+      "texture": "res://assets/characters/player/animations/female_up.png"
+    }
+  },
+  "spring": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            300,
+            838
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            274,
+            838
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            277,
+            838
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.252941176470588,
+      "texture": "res://assets/characters/player/animations/spring_male_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299,
+            868
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            290,
+            868
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            292,
+            868
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.232432432432432,
+      "texture": "res://assets/characters/player/animations/spring_male_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299,
+            818
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            294,
+            818
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            284,
+            818
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.255192878338279,
+      "texture": "res://assets/characters/player/animations/spring_male_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            288,
+            824
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            253,
+            824
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            284,
+            824
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.258258258258258,
+      "texture": "res://assets/characters/player/animations/spring_male_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            297,
+            868
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            288,
+            868
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            293,
+            868
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.238227146814404,
+      "texture": "res://assets/characters/player/animations/spring_male_up.png"
+    }
+  },
+  "spring_female": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            295,
+            852
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            274,
+            852
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            284,
+            852
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.245014245014245,
+      "texture": "res://assets/characters/player/animations/spring_female_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            297,
+            868
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            295,
+            868
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            299,
+            868
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.238227146814404,
+      "texture": "res://assets/characters/player/animations/spring_female_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            291,
+            844
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            260,
+            844
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            283,
+            844
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.245014245014245,
+      "texture": "res://assets/characters/player/animations/spring_female_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            281,
+            844
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            247,
+            842
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            292,
+            844
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.244318181818182,
+      "texture": "res://assets/characters/player/animations/spring_female_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            301,
+            850
+          ],
+          "region": [
+            0,
+            0,
+            591,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            295,
+            850
+          ],
+          "region": [
+            591,
+            0,
+            592,
+            887
+          ]
+        },
+        {
+          "anchor": [
+            289,
+            850
+          ],
+          "region": [
+            1183,
+            0,
+            591,
+            887
+          ]
+        }
+      ],
+      "scale": 0.256716417910448,
+      "texture": "res://assets/characters/player/animations/spring_female_up.png"
+    }
+  },
+  "summer": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            300.0,
+            838.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            272.0,
+            838.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            279.0,
+            838.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.251461988304094,
+      "texture": "res://assets/characters/player/animations/summer_male_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299.0,
+            868.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            868.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            295.0,
+            868.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.229946524064171,
+      "texture": "res://assets/characters/player/animations/summer_male_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            295.0,
+            820.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            295.0,
+            820.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            281.0,
+            820.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.252941176470588,
+      "texture": "res://assets/characters/player/animations/summer_male_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            288.0,
+            824.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            253.0,
+            824.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            284.0,
+            824.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.254437869822485,
+      "texture": "res://assets/characters/player/animations/summer_male_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            295.0,
+            864.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            282.0,
+            864.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            288.0,
+            866.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.241573033707865,
+      "texture": "res://assets/characters/player/animations/summer_male_up.png"
+    }
+  },
+  "summer_female": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            297.0,
+            856.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            280.0,
+            856.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            288.0,
+            856.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.244318181818182,
+      "texture": "res://assets/characters/player/animations/summer_female_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            295.0,
+            870.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            297.0,
+            870.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            296.0,
+            870.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.238227146814404,
+      "texture": "res://assets/characters/player/animations/summer_female_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            294.0,
+            846.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            259.0,
+            846.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            284.0,
+            848.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.242937853107345,
+      "texture": "res://assets/characters/player/animations/summer_female_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            287.0,
+            848.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            249.0,
+            848.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            295.0,
+            848.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.244318181818182,
+      "texture": "res://assets/characters/player/animations/summer_female_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            295.0,
+            856.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            297.0,
+            856.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            856.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.253687315634218,
+      "texture": "res://assets/characters/player/animations/summer_female_up.png"
+    }
+  },
+  "winter": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            303.0,
+            840.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            276.0,
+            840.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            271.0,
+            840.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.250728862973761,
+      "texture": "res://assets/characters/player/animations/winter_male_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            298.0,
+            866.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            287.0,
+            866.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            290.0,
+            866.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.231182795698925,
+      "texture": "res://assets/characters/player/animations/winter_male_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            293.0,
+            814.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            287.0,
+            814.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            286.0,
+            814.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.255192878338279,
+      "texture": "res://assets/characters/player/animations/winter_male_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            282.0,
+            822.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            251.0,
+            822.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            283.0,
+            822.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.255952380952381,
+      "texture": "res://assets/characters/player/animations/winter_male_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            296.0,
+            860.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            860.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            294.0,
+            860.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.244318181818182,
+      "texture": "res://assets/characters/player/animations/winter_male_up.png"
+    }
+  },
+  "winter_female": {
+    "down": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            297.0,
+            844.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            278.0,
+            844.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            286.0,
+            844.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.239554317548747,
+      "texture": "res://assets/characters/player/animations/winter_female_down.png"
+    },
+    "idle": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            299.0,
+            870.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            298.0,
+            870.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            300.0,
+            870.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.236914600550964,
+      "texture": "res://assets/characters/player/animations/winter_female_idle.png"
+    },
+    "left": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            303.0,
+            844.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            263.0,
+            844.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            288.0,
+            844.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.243626062322946,
+      "texture": "res://assets/characters/player/animations/winter_female_left.png"
+    },
+    "right": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            291.0,
+            838.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            249.0,
+            838.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            299.0,
+            840.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.25,
+      "texture": "res://assets/characters/player/animations/winter_female_right.png"
+    },
+    "up": {
+      "alpha_cleanup": false,
+      "frames": [
+        {
+          "anchor": [
+            303.0,
+            854.0
+          ],
+          "region": [
+            0.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            304.0,
+            854.0
+          ],
+          "region": [
+            591.0,
+            0.0,
+            592.0,
+            887.0
+          ]
+        },
+        {
+          "anchor": [
+            292.0,
+            854.0
+          ],
+          "region": [
+            1183.0,
+            0.0,
+            591.0,
+            887.0
+          ]
+        }
+      ],
+      "scale": 0.252199413489736,
+      "texture": "res://assets/characters/player/animations/winter_female_up.png"
+    }
+  }
+}

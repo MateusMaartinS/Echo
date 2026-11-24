@@ -1,0 +1,38 @@
+{
+  "song_name": "ECHO Test Theme",
+  "audio": "res://audio/music/test_song.wav",
+  "bpm": 144.0,
+  "offset": 0.0,
+  "snap": 0.25,
+  "response_delay_beats": 4.0,
+  "phrases": [
+    {
+      "start_beat": 2.0,
+      "end_beat": 10.0,
+      "notes": [
+        {"beat": 2.0, "lane": 0},
+        {"beat": 2.5, "lane": 1},
+        {"beat": 3.0, "lane": 2},
+        {"beat": 3.5, "lane": 3},
+        {"beat": 4.0, "lane": 0},
+        {"beat": 5.0, "lane": 2},
+        {"beat": 6.0, "lane": 1},
+        {"beat": 7.0, "lane": 3},
+        {"beat": 8.0, "lane": 0},
+        {"beat": 8.5, "lane": 1},
+        {"beat": 9.0, "lane": 2},
+        {"beat": 9.5, "lane": 3}
+      ]
+    },
+    {
+      "start_beat": 14.0,
+      "end_beat": 18.0,
+      "notes": [
+        {"beat": 14.0, "lane": 3},
+        {"beat": 15.0, "lane": 2},
+        {"beat": 16.0, "lane": 1},
+        {"beat": 17.0, "lane": 0}
+      ]
+    }
+  ]
+}

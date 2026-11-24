@@ -1,0 +1,173 @@
+[gd_resource type="Resource" script_class="RhythmChart" load_steps=22 format=3]
+
+[ext_resource type="Script" path="res://scripts/chart/RhythmChart.gd" id="1_chart"]
+[ext_resource type="AudioStream" path="res://audio/music/test_song.wav" id="2_audio"]
+[ext_resource type="Script" path="res://scripts/chart/RoundData.gd" id="3_round"]
+[ext_resource type="Script" path="res://scripts/chart/NoteData.gd" id="4_note"]
+
+[sub_resource type="Resource" id="Note1"]
+script = ExtResource("4_note")
+time = 0.30
+lane = 0
+type = "tap"
+
+[sub_resource type="Resource" id="Note2"]
+script = ExtResource("4_note")
+time = 0.90
+lane = 1
+type = "tap"
+
+[sub_resource type="Resource" id="Note3"]
+script = ExtResource("4_note")
+time = 1.50
+lane = 2
+type = "tap"
+
+[sub_resource type="Resource" id="Note4"]
+script = ExtResource("4_note")
+time = 2.10
+lane = 1
+type = "tap"
+
+[sub_resource type="Resource" id="Note5"]
+script = ExtResource("4_note")
+time = 2.70
+lane = 3
+type = "tap"
+
+[sub_resource type="Resource" id="Note6"]
+script = ExtResource("4_note")
+time = 3.30
+lane = 2
+type = "tap"
+
+[sub_resource type="Resource" id="Round1"]
+script = ExtResource("3_round")
+name = "First Echo"
+duration = 3.7
+notes = Array[ExtResource("4_note")]([SubResource("Note1"), SubResource("Note2"), SubResource("Note3"), SubResource("Note4"), SubResource("Note5"), SubResource("Note6")])
+
+[sub_resource type="Resource" id="Note7"]
+script = ExtResource("4_note")
+time = 0.30
+lane = 3
+type = "tap"
+[sub_resource type="Resource" id="Note8"]
+script = ExtResource("4_note")
+time = 0.90
+lane = 2
+type = "tap"
+[sub_resource type="Resource" id="Note9"]
+script = ExtResource("4_note")
+time = 1.50
+lane = 1
+type = "tap"
+[sub_resource type="Resource" id="Note10"]
+script = ExtResource("4_note")
+time = 2.10
+lane = 0
+type = "tap"
+[sub_resource type="Resource" id="Note11"]
+script = ExtResource("4_note")
+time = 2.70
+lane = 1
+type = "tap"
+[sub_resource type="Resource" id="Note12"]
+script = ExtResource("4_note")
+time = 3.30
+lane = 3
+type = "tap"
+
+[sub_resource type="Resource" id="Round2"]
+script = ExtResource("3_round")
+name = "Second Echo"
+duration = 3.7
+notes = Array[ExtResource("4_note")]([SubResource("Note7"), SubResource("Note8"), SubResource("Note9"), SubResource("Note10"), SubResource("Note11"), SubResource("Note12")])
+
+[sub_resource type="Resource" id="Note13"]
+script = ExtResource("4_note")
+time = 0.30
+lane = 0
+type = "tap"
+[sub_resource type="Resource" id="Note14"]
+script = ExtResource("4_note")
+time = 0.60
+lane = 0
+type = "tap"
+[sub_resource type="Resource" id="Note15"]
+script = ExtResource("4_note")
+time = 0.90
+lane = 3
+type = "tap"
+[sub_resource type="Resource" id="Note16"]
+script = ExtResource("4_note")
+time = 1.50
+lane = 1
+type = "tap"
+[sub_resource type="Resource" id="Note17"]
+script = ExtResource("4_note")
+time = 2.10
+lane = 2
+type = "tap"
+[sub_resource type="Resource" id="Note18"]
+script = ExtResource("4_note")
+time = 2.70
+lane = 1
+type = "tap"
+[sub_resource type="Resource" id="Note19"]
+script = ExtResource("4_note")
+time = 3.30
+lane = 3
+type = "tap"
+
+[sub_resource type="Resource" id="Round3"]
+script = ExtResource("3_round")
+name = "Quick Echo"
+duration = 3.7
+notes = Array[ExtResource("4_note")]([SubResource("Note13"), SubResource("Note14"), SubResource("Note15"), SubResource("Note16"), SubResource("Note17"), SubResource("Note18"), SubResource("Note19")])
+
+[sub_resource type="Resource" id="Note20"]
+script = ExtResource("4_note")
+time = 0.30
+lane = 1
+type = "tap"
+[sub_resource type="Resource" id="Note21"]
+script = ExtResource("4_note")
+time = 0.90
+lane = 3
+type = "tap"
+[sub_resource type="Resource" id="Note22"]
+script = ExtResource("4_note")
+time = 1.50
+lane = 0
+type = "tap"
+[sub_resource type="Resource" id="Note23"]
+script = ExtResource("4_note")
+time = 2.10
+lane = 2
+type = "tap"
+[sub_resource type="Resource" id="Note24"]
+script = ExtResource("4_note")
+time = 2.70
+lane = 3
+type = "tap"
+[sub_resource type="Resource" id="Note25"]
+script = ExtResource("4_note")
+time = 3.30
+lane = 0
+type = "tap"
+
+[sub_resource type="Resource" id="Round4"]
+script = ExtResource("3_round")
+name = "Final Echo"
+duration = 3.7
+notes = Array[ExtResource("4_note")]([SubResource("Note20"), SubResource("Note21"), SubResource("Note22"), SubResource("Note23"), SubResource("Note24"), SubResource("Note25")])
+
+[resource]
+script = ExtResource("1_chart")
+song_name = "Prototype Echo"
+artist = "ECHO Team"
+bpm = 100.0
+difficulty = "Tutorial"
+song = ExtResource("2_audio")
+rounds = Array[ExtResource("3_round")]([SubResource("Round1"), SubResource("Round2"), SubResource("Round3"), SubResource("Round4")])

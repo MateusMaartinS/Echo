@@ -1,0 +1,9 @@
+{
+  "song_name": "ECHO — OUTONO",
+  "audio": "res://audio/music/test_song.wav",
+  "bpm": 144.0,
+  "offset": 0.0,
+  "snap": 0.25,
+  "response_delay_beats": 4.0,
+  "phrases": []
+}

@@ -1,0 +1,16 @@
+# Godot rebuilds this cache on the first project import.
+.godot/
+*.import
+
+# Local screenshots and editor artifacts are not part of the game.
+art_preview/
+
+# Player data belongs to user://, never to the repository.
+progress.cfg
+wardrobe.cfg
+settings.cfg
+
+# Local OS/editor files.
+.DS_Store
+Thumbs.db
+*.tmp

@@ -1,0 +1,359 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource path="res://scripts/editor/ChartEditor.gd" type="Script" id="1"]
+[ext_resource path="res://scripts/editor/Timeline.gd" type="Script" id="2"]
+[ext_resource path="res://scripts/ui/SimplePaper.gd" type="Script" id="3"]
+
+[node name="Editor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Paper" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3")
+
+[node name="Top" type="Control" parent="."]
+offset_right = 1280.0
+offset_bottom = 100.0
+
+[node name="Title" type="Label" parent="Top"]
+offset_left = 20.0
+offset_top = 12.0
+offset_right = 300.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+theme_override_font_sizes/font_size = 18
+text = "ECHO — EDITOR"
+
+[node name="BPMText" type="Label" parent="Top"]
+offset_left = 310.0
+offset_top = 16.0
+offset_right = 350.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+text = "BPM"
+
+[node name="BPM" type="SpinBox" parent="Top"]
+offset_left = 350.0
+offset_top = 10.0
+offset_right = 435.0
+offset_bottom = 42.0
+min_value = 40.0
+max_value = 240.0
+step = 1.0
+value = 144.0
+
+[node name="SnapText" type="Label" parent="Top"]
+offset_left = 448.0
+offset_top = 16.0
+offset_right = 495.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+text = "SNAP"
+
+[node name="Snap" type="SpinBox" parent="Top"]
+offset_left = 495.0
+offset_top = 10.0
+offset_right = 580.0
+offset_bottom = 42.0
+min_value = 0.0625
+max_value = 1.0
+step = 0.0625
+value = 0.25
+
+[node name="ResponseText" type="Label" parent="Top"]
+offset_left = 593.0
+offset_top = 16.0
+offset_right = 700.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+text = "RESPOSTA +"
+
+[node name="ResponseDelay" type="SpinBox" parent="Top"]
+offset_left = 700.0
+offset_top = 10.0
+offset_right = 790.0
+offset_bottom = 42.0
+min_value = 0.0
+max_value = 32.0
+step = 0.25
+value = 4.0
+suffix = " beats"
+
+[node name="BeatLabel" type="Label" parent="Top"]
+offset_left = 805.0
+offset_top = 16.0
+offset_right = 1050.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+theme_override_font_sizes/font_size = 16
+text = "BEAT 0.00  —  0.00s"
+
+[node name="ZoomOut" type="Button" parent="Top"]
+offset_left = 20.0
+offset_top = 55.0
+offset_right = 60.0
+offset_bottom = 90.0
+text = "—"
+
+[node name="ZoomIn" type="Button" parent="Top"]
+offset_left = 65.0
+offset_top = 55.0
+offset_right = 105.0
+offset_bottom = 90.0
+text = "+"
+
+[node name="PlayPause" type="Button" parent="Top"]
+offset_left = 115.0
+offset_top = 55.0
+offset_right = 210.0
+offset_bottom = 90.0
+text = "PLAY"
+
+[node name="Stop" type="Button" parent="Top"]
+offset_left = 220.0
+offset_top = 55.0
+offset_right = 300.0
+offset_bottom = 90.0
+text = "STOP"
+
+[node name="Status" type="Label" parent="Top"]
+offset_left = 315.0
+offset_top = 60.0
+offset_right = 1260.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 0.75)
+theme_override_font_sizes/font_size = 14
+text = "Pronto."
+autowrap_mode = 2
+
+[node name="PhrasePanel" type="Control" parent="."]
+offset_left = 15.0
+offset_top = 108.0
+offset_right = 250.0
+offset_bottom = 640.0
+
+[node name="PhraseListTitle" type="Label" parent="PhrasePanel"]
+offset_right = 230.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+theme_override_font_sizes/font_size = 14
+text = "FRASES DO LORDE"
+
+[node name="PhraseList" type="ItemList" parent="PhrasePanel"]
+offset_top = 18.0
+offset_right = 230.0
+offset_bottom = 104.0
+allow_reselect = true
+
+[node name="NewPhraseBtn" type="Button" parent="PhrasePanel"]
+offset_top = 108.0
+offset_right = 110.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 13
+text = "NOVA FRASE"
+
+[node name="DeletePhraseBtn" type="Button" parent="PhrasePanel"]
+offset_left = 118.0
+offset_top = 108.0
+offset_right = 230.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 13
+text = "EXCLUIR"
+
+[node name="CopyBtn" type="Button" parent="PhrasePanel"]
+offset_top = 138.0
+offset_right = 110.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 13
+tooltip_text = "Copia a frase selecionada (e as seguintes, conforme o campo ao lado). Atalho: Ctrl+C"
+text = "COPIAR"
+
+[node name="CopyCountSpin" type="SpinBox" parent="PhrasePanel"]
+offset_left = 118.0
+offset_top = 138.0
+offset_right = 230.0
+offset_bottom = 164.0
+min_value = 1.0
+max_value = 64.0
+value = 1.0
+suffix = " frases"
+tooltip_text = "Quantas frases copiar em sequência a partir da selecionada (ex.: 8 = um trecho inteiro)"
+
+[node name="PasteHereBtn" type="Button" parent="PhrasePanel"]
+offset_top = 168.0
+offset_right = 110.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 13
+tooltip_text = "Cola no playhead, em espaço livre. Atalho: Ctrl+V"
+text = "COLAR AQUI"
+
+[node name="PasteOverBtn" type="Button" parent="PhrasePanel"]
+offset_left = 118.0
+offset_top = 168.0
+offset_right = 230.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 13
+tooltip_text = "Cola a partir do início da frase selecionada, substituindo o que estiver no trecho"
+text = "COLAR SOBRE"
+
+[node name="StartBeatText" type="Label" parent="PhrasePanel"]
+offset_top = 202.0
+offset_right = 54.0
+offset_bottom = 228.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+theme_override_font_sizes/font_size = 12
+text = "INÍCIO"
+vertical_alignment = 1
+
+[node name="StartBeatSpin" type="SpinBox" parent="PhrasePanel"]
+offset_left = 56.0
+offset_top = 202.0
+offset_right = 160.0
+offset_bottom = 228.0
+max_value = 2000.0
+step = 0.0625
+editable = false
+
+[node name="MarkStartBtn" type="Button" parent="PhrasePanel"]
+offset_left = 164.0
+offset_top = 202.0
+offset_right = 230.0
+offset_bottom = 228.0
+theme_override_font_sizes/font_size = 12
+tooltip_text = "Usar a posição atual do playhead como início"
+text = "AQUI"
+
+[node name="EndBeatText" type="Label" parent="PhrasePanel"]
+offset_top = 232.0
+offset_right = 54.0
+offset_bottom = 258.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+theme_override_font_sizes/font_size = 12
+text = "FIM"
+vertical_alignment = 1
+
+[node name="EndBeatSpin" type="SpinBox" parent="PhrasePanel"]
+offset_left = 56.0
+offset_top = 232.0
+offset_right = 160.0
+offset_bottom = 258.0
+max_value = 2000.0
+step = 0.0625
+editable = false
+
+[node name="MarkEndBtn" type="Button" parent="PhrasePanel"]
+offset_left = 164.0
+offset_top = 232.0
+offset_right = 230.0
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 12
+tooltip_text = "Usar a posição atual do playhead como fim"
+text = "AQUI"
+
+[node name="ToolTitle" type="Label" parent="PhrasePanel"]
+offset_top = 266.0
+offset_right = 230.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 1)
+theme_override_font_sizes/font_size = 13
+text = "FERRAMENTA (teclas 1, 2...)"
+
+[node name="FlowerHalf" type="OptionButton" parent="PhrasePanel"]
+offset_top = 350.0
+offset_right = 230.0
+offset_bottom = 376.0
+theme_override_font_sizes/font_size = 12
+
+[node name="FlowerField" type="OptionButton" parent="PhrasePanel"]
+offset_top = 380.0
+offset_right = 230.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 12
+
+[node name="HelpText" type="Label" parent="PhrasePanel"]
+offset_top = 412.0
+offset_right = 230.0
+offset_bottom = 532.0
+theme_override_colors/font_color = Color(0.0902, 0.2902, 0.6039, 0.75)
+theme_override_font_sizes/font_size = 12
+autowrap_mode = 2
+text = ""
+
+[node name="TimelineScroll" type="ScrollContainer" parent="."]
+offset_left = 260.0
+offset_top = 108.0
+offset_right = 1265.0
+offset_bottom = 640.0
+
+[node name="TimelineView" type="Control" parent="TimelineScroll"]
+custom_minimum_size = Vector2(4400, 500)
+script = ExtResource("2")
+
+[node name="Undo" type="Button" parent="."]
+offset_left = 790.0
+offset_top = 650.0
+offset_right = 890.0
+offset_bottom = 690.0
+tooltip_text = "Desfaz a última edição (Ctrl+Z)"
+text = "DESFAZER"
+
+[node name="Save" type="Button" parent="."]
+offset_left = 900.0
+offset_top = 650.0
+offset_right = 985.0
+offset_bottom = 690.0
+text = "SALVAR"
+
+[node name="Clear" type="Button" parent="."]
+offset_left = 995.0
+offset_top = 650.0
+offset_right = 1085.0
+offset_bottom = 690.0
+text = "LIMPAR"
+
+[node name="Test" type="Button" parent="."]
+offset_left = 1095.0
+offset_top = 650.0
+offset_right = 1180.0
+offset_bottom = 690.0
+text = "TESTAR"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 650.0
+offset_right = 110.0
+offset_bottom = 690.0
+text = "MENU"
+
+[connection signal="value_changed" from="Top/BPM" to="." method="_on_bpm_value_changed"]
+[connection signal="pressed" from="Top/ZoomOut" to="." method="_on_zoom_out_pressed"]
+[connection signal="pressed" from="Top/ZoomIn" to="." method="_on_zoom_in_pressed"]
+[connection signal="pressed" from="Top/PlayPause" to="." method="_on_play_pause_pressed"]
+[connection signal="pressed" from="Top/Stop" to="." method="_on_stop_pressed"]
+[connection signal="item_selected" from="PhrasePanel/PhraseList" to="." method="_on_phrase_list_item_selected"]
+[connection signal="pressed" from="PhrasePanel/NewPhraseBtn" to="." method="_on_new_phrase_pressed"]
+[connection signal="pressed" from="PhrasePanel/DeletePhraseBtn" to="." method="_on_delete_phrase_pressed"]
+[connection signal="value_changed" from="PhrasePanel/StartBeatSpin" to="." method="_on_start_beat_changed"]
+[connection signal="pressed" from="PhrasePanel/CopyBtn" to="." method="_on_copy_pressed"]
+[connection signal="pressed" from="PhrasePanel/PasteHereBtn" to="." method="_on_paste_here_pressed"]
+[connection signal="pressed" from="PhrasePanel/PasteOverBtn" to="." method="_on_paste_over_pressed"]
+[connection signal="pressed" from="Undo" to="." method="_on_undo_pressed"]
+[connection signal="pressed" from="PhrasePanel/MarkStartBtn" to="." method="_on_mark_start_pressed"]
+[connection signal="value_changed" from="PhrasePanel/EndBeatSpin" to="." method="_on_end_beat_changed"]
+[connection signal="pressed" from="PhrasePanel/MarkEndBtn" to="." method="_on_mark_end_pressed"]
+[connection signal="pressed" from="Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="Clear" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="Test" to="." method="_on_test_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
